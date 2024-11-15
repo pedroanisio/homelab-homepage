@@ -1,0 +1,98 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/services
+
+- Lab.internal:
+    - Proxmox Backup Server:
+        icon: proxmox.png
+        href: https://10.10.10.105:8007/
+        description: 10.10.10.105 (pve-nuc-02)
+    - Grafana:
+        icon: grafana.png
+        href: http://grafana.k3s.lab.internal/
+        description: Grafana @ K3S Cluster
+    - Prometheus:
+        icon: prometheus.png
+        href: http://balance-01.k3s.lab.internal:9090/
+        description: Promtheus @ K3S Cluster
+    - Longhorn:
+        icon: longhorn.png
+        href: http://longhorn.k3s.lab.internal/
+        description: Longhorn @ K3S Cluster
+
+- K3S:
+    - Grafana:
+        icon: grafana.png
+        href: http://grafana.k3s.lab.internal/
+        description: Grafana @ K3S Cluster
+    - Prometheus:
+        icon: prometheus.png
+        href: http://balance-01.k3s.lab.internal:9090/
+        description: Promtheus @ K3S Cluster
+    - Longhorn:
+        icon: longhorn.png
+        href: http://longhorn.k3s.lab.internal/
+        description: Longhorn @ K3S Cluster                                       
+
+- IoT:
+    - Home Assistant:
+        icon: home-assistant.png
+        href: https://6xv5wc086hefbwqxijcm4jogumejd6mv.ui.nabu.casa/
+        description: Homeassistant
+
+- Networking:
+    - Switch TP-Link:
+        icon: mdi-lan-#FFFFFF
+        href: http://10.0.0.14/
+        description: Switch TP-Link
+
+    - Switch MikroTik:
+        icon: mdi-lan-#FFFFFF
+        href: http://10.0.0.172/    
+        description: Switch (MikroTik) CSS610-8G-2S+      
+
+    - Tailscale Admin:
+        icon: mdi-folder-key-network-#FFFFFF
+        href: https://login.tailscale.com/admin
+        description: Tailscale Admin  
+
+    - UniFI Admin:
+        icon: mdi-wifi-settings-#FFFFFF
+        href: https://unifi.ui.com/
+        description: (internet) UniFI Admin   
+
+- Top Services:
+    - Proxmox:
+        icon: proxmox.png
+        href: https://proxmox.local.arc4d3.io/
+        description: Proxmox Virtual Environment
+
+    - Proxmox pve-nuc-1 (LAN):
+        icon: proxmox.png
+        href: https://192.168.199.120:8006
+        description: Proxmox Virtual Env (LAN)
+
+    - Proxmox pve-white (LAN):
+        icon: proxmox.png
+        href: https://192.168.199.156:8006
+        description: Proxmox Virtual Env (LAN)
+
+    - Portainer:
+        icon: portainer.png
+        href: https://portainer.local.arc4d3.io/
+        description: Portainer Container Management
+
+    - OPNsense:
+        icon: opnsense.png
+        href: https://10.10.10.1/
+        description: OPNsense Firewall
+
+    - Jupyter:
+        icon: jupyter.png
+        href: https://jupyter.local.arc4d3.io/
+        description: Jupyter Notebook
+
+    - GitLab:
+        icon: gitlab.png
+        href: https://gitlab.local.arc4d3.io/
+        description: GitLab Community Edition

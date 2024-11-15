@@ -1,0 +1,34 @@
+---
+# Title of the homepage
+title: "PALS - Lab Internal"
+
+# URL where the homepage starts
+startUrl: "/"
+
+# Background settings with an image from Unsplash and customized filters
+background:
+  image: https://stsci-opo.org/STScI-01GA6KNV1S3TP2JBPCDT8G826T.png
+  blur: sm # Medium blur for a softer look
+  saturate: 75 # Slightly vibrant saturation for a lively feel
+  brightness: 75 # Bright but not overwhelming
+  opacity: 85 # Makes the image blend smoothly
+
+# Enable card background blur for aesthetics
+cardBlur: md
+
+# Custom favicon for your page
+favicon: https://rockettheme.com/favicon.png 
+
+# Use a dark theme for a sleek, modern look
+theme: dark
+
+# Fixed color palette for the site
+color: slate
+
+quicklaunch:
+  searchDescriptions: true
+  hideInternetSearch: true
+  showSearchSuggestions: true
+  hideVisitURL: true
+  provider: google # google, duckduckgo, bing, baidu, brave or custom
+

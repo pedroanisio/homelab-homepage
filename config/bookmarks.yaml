@@ -1,0 +1,32 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/bookmarks
+
+- AI:
+    - ChatGPT:
+        - abbr: GPT
+          href: https://chatgpt.com/
+    - OpenAI Playground:
+        - abbr: PLAY
+          href: https://platform.openai.com/playground/chat
+    - Gemini:
+        - abbr: BAR
+          href: https://gemini.google.com/app
+- Developer:
+    - Github:
+        - abbr: GH
+          href: https://github.com/
+
+- Social:
+    - Medium (Self):
+        - abbr: SELF
+          href: https://medium.com/me/stories/public
+
+    - Reddit:
+        - abbr: RE
+          href: https://reddit.com/
+
+- Entertainment:
+    - YouTube:
+        - abbr: YT
+          href: https://youtube.com/
