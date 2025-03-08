@@ -1,8 +1,4 @@
----
-# For configuration options and examples, please see:
-# https://gethomepage.dev/latest/configs/bookmarks
-
-- AI:
+- AI Tools:
     - ChatGPT:
         - abbr: GPT
           icon: openai
@@ -11,134 +7,76 @@
         - abbr: PLAY
           icon: openai
           href: https://platform.openai.com/playground/chat
-    - Gemini:
-        - abbr: BAR
+    - Google Gemini:
+        - abbr: GEM
           icon: google
-          href: https://gemini.google.com/app
-- Developer:
-    - Github:
+          href: https://gemini.google.com
+- Development:
+    - GitHub:
         - abbr: GH
           icon: github
           href: https://github.com/
-- Social:
-    - Medium (Self):
-        - abbr: SELF
-          href: https://medium.com/me/stories/public
-    - Reddit:
-        - abbr: RE
-          icon: reddit
-          href: https://reddit.com/
-- Entertainment:
+- Social & Content:
     - YouTube:
         - abbr: YT
           icon: youtube
-          href: https://youtube.com/
-    - F1 TV:
-        - abbr: F1
-          icon: formula1
-          href: https://f1tv.formula1.com/
-- Infrastructure:
-    - PALS - Lab Internal:
-        - href: https://homepage.local.arc4d3.io/
-    - PVE Storage 2:
-        - href: https://192.168.199.10:8006/
-    - PVE Compute 1:
-        - href: https://192.168.199.32:8006/
-        - href: https://192.168.199.2:8006/
-        - href: http://10.10.10.210:32400/web/index.html
-    - Radarr:
-        - href: http://10.10.10.210:7878/
-    - Portainer (Virgulino):
-        - href: https://10.10.10.210:9443/#!/home
-    - Zabbix Dashboard:
-        - href: http://10.10.10.7:8080/zabbix.php?action=dashboard.view&dashboardid=1
-    - Unifi:
-        - href: https://unifi.ui.com/dashboard
-    - Shinobi:
-        - href: http://192.168.199.105:8080/
-    - Home Assistant:
-        - href: http://10.0.33.219:8123
-    - Oracle University:
-        - href: https://www.oracle.com/br/education/
-
-- Staging:
-    - cAdvisor:
-        - href: http://staging-docker-blue.vm.lab.internal:8080/containers/
-    - Homepage:
-        - href: http://staging-docker-blue.vm.lab.internal:3000/
-    - Change Detection:
-        - href: http://staging-docker-blue.vm.lab.internal:5000/
-    - NTFY:
-        - href: http://staging-docker-blue.vm.lab.internal:8081/
-    - Portainer:
-        - href: https://staging-docker-blue.vm.lab.internal:9443/#!/home
+          href: https://youtube.com
+    - Reddit:
+        - abbr: RE
+          icon: reddit
+          href: https://reddit.com
+    - Medium:
+        - abbr: MED
+          icon: medium
+          href: https://medium.com/me/stories/public
+    - Twitter:
+        - abbr: X
+          icon: twitter
+          href: https://x.com/pedroanisio
+- Media Management:
+    - ThinLinc:
+        - abbr: TLC
+          href: https://45-91-208-9.a.seedbox.vip:300/agent
+- Family & Personal:
+    - OneDrive:
+        - abbr: OD
+          href: https://onedrive.live.com/
+    - Google Calendar:
+        - abbr: CAL
+          href: https://calendar.google.com/
 - Production:
     - NTFY:
-        - href: http://grid-guard-hub-1.vm.lab.internal:8081/
+        - abbr: NTF
+          href: http://grid-guard-hub-1.vm.lab.internal:8081
     - cAdvisor:
-        - href: http://grid-guard-hub-1.vm.lab.internal:8080/containers/
+        - abbr: ADV
+          href: http://grid-guard-hub-1.vm.lab.internal:8080/containers/
     - Grafana:
-        - href: http://grid-guard-hub-1.vm.lab.internal:3030/?orgId=1
-    - Promtail:
-        - href: http://staging-docker-blue.vm.lab.internal:3100/metrics
-- Seedbox:
-    - Downloads:
-        - href: https://dashboard-45-91-208-9.a.seedbox.vip/Downloads/
-    - Dashboard:
-        - href: https://dashboard-45-91-208-9.a.seedbox.vip/
-    - ThinLinc:
-        - href: https://45-91-208-9.a.seedbox.vip:300/agent
-    - Prowlarr:
-        - href: https://45-91-208-9.a.seedbox.vip/prowlarr/
-    - NZBGet:
-        - href: https://45-91-208-9.a.seedbox.vip/nzbget/
-    - Sonarr:
-        - href: https://sonarr-45-91-208-9.a.seedbox.vip/sonarr/
-- Virgulino:
-    - Prowlarr:
-        - href: http://10.10.10.210:9696/
-    - Readarr:
-        - href: http://10.10.10.210:8787/
-    - NZBGet:
-        - href: http://10.10.10.210:6789/
-    - Client:
-        - href: https://members.rapidseedbox.com//clientarea.php
-    - Plex:
-        - href: https://plex.local.arc4d3.io/web
-    - Tdarr:
-        - href: http://10.10.10.102:8265
-- Storage:
-    - OneDrive:
-        - href: https://onedrive.live.com/
-- Blog:
+        - abbr: GRF
+          href: http://grid-guard-hub-1.vm.lab.internal:3030/?orgId=1
+- Datasets & Archives:
     - Medium:
-        - href: https://medium.com/me/stories/public
+        - abbr: MED
+          href: https://medium.com/me/stories/public
     - Twitter:
-        - href: https://x.com/pedroanisio
-    - FileUpload:
-        - href: https://fileuploader.yaapp.io/
-- Datasets:
-    - Arquivo:
-        - href: https://atom.arquivoestado.sp.gov.br/
-    - APESP:
-        - href: https://www.arquivoestado.sp.gov.br/web/
+        - abbr: X
+          href: https://x.com/pedroanisio
     - DIBRARQ:
-        - href: https://dibrarq.arquivonacional.gov.br/
-- Products:
-    - Picofme:
-        - href: https://picofme.io/
+        - abbr: DIB
+          href: https://dibrarq.arquivonacional.gov.br/
+    - Arquivo SP:
+        - abbr: ASP
+          href: https://atom.saa.sp.gov.br/
+- Products & Tools:
     - Quivr:
-        - href: https://www.quivr.app/
+        - abbr: QVR
+          href: https://www.quivr.app/
     - Beam:
-        - href: https://www.beam.cloud/
-    - Vast:
-        - href: https://wikia.schneedc.com/en/cloudservice/vast
-    - Imagica:
-        - href: https://www.imagica.ai/
-    - HeyGen:
-        - href: https://app.heygen.com/avatars
-    - Aragon:
-        - href: https://www.aragon.ai/?via=elegantthemes
+        - abbr: BM
+          href: https://www.beam.app/
     - OpenArt:
-        - href: https://openart.ai/discovery
-
+        - abbr: OA
+          href: https://openart.ai
+    - Picofme:
+        - abbr: PIC
+          href: https://picofme.io
