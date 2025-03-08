@@ -2,38 +2,6 @@
 # For configuration options and examples, please see:
 # https://gethomepage.dev/latest/configs/services
 
-- Lab.internal:
-    - Proxmox Backup Server:
-        icon: proxmox.png
-        href: https://10.10.10.105:8007/
-        description: 10.10.10.105 (pve-nuc-02)
-    - Grafana:
-        icon: grafana.png
-        href: http://grafana.k3s.lab.internal/
-        description: Grafana @ K3S Cluster
-    - Prometheus:
-        icon: prometheus.png
-        href: http://balance-01.k3s.lab.internal:9090/
-        description: Promtheus @ K3S Cluster
-    - Longhorn:
-        icon: longhorn.png
-        href: http://longhorn.k3s.lab.internal/
-        description: Longhorn @ K3S Cluster
-
-- K3S:
-    - Grafana:
-        icon: grafana.png
-        href: http://grafana.k3s.lab.internal/
-        description: Grafana @ K3S Cluster
-    - Prometheus:
-        icon: prometheus.png
-        href: http://balance-01.k3s.lab.internal:9090/
-        description: Promtheus @ K3S Cluster
-    - Longhorn:
-        icon: longhorn.png
-        href: http://longhorn.k3s.lab.internal/
-        description: Longhorn @ K3S Cluster                                       
-
 - IoT:
     - Home Assistant:
         icon: home-assistant.png
@@ -61,22 +29,67 @@
         href: https://unifi.ui.com/
         description: (internet) UniFI Admin   
 
-- Top Services:
-    - Proxmox:
+- Proxmox:
+    - pve-node-0:
         icon: proxmox.png
-        href: https://proxmox.local.arc4d3.io/
-        description: Proxmox Virtual Environment
+        href: https://192.168.199.102:8006
+        description: Proxmox Virtual Env (FILESERVER)
+        ping: 192.168.199.102
+        node: pve-node-0
+        widget:
+          type: proxmox
+          url: https://192.168.199.102:8006
+          username: api@pam!ro
+          password: 079d7317-1b2c-4b83-8642-5caa886dc48b 
 
-    - Proxmox pve-nuc-1 (LAN):
+    - pve-node-1:
         icon: proxmox.png
-        href: https://192.168.199.120:8006
-        description: Proxmox Virtual Env (LAN)
+        href: https://192.168.199.103:8006
+        description: Proxmox Virtual Env (NUC-02)
+        ping: 192.168.199.103
+        node: pve-node-1
+        widget:
+          type: proxmox
+          url: https://192.168.199.103:8006
+          username: api@pam!ro
+          password: 079d7317-1b2c-4b83-8642-5caa886dc48b
 
-    - Proxmox pve-white (LAN):
+    - pve-node-3:
         icon: proxmox.png
-        href: https://192.168.199.156:8006
-        description: Proxmox Virtual Env (LAN)
+        href: https://192.168.199.104:8006
+        description: Proxmox Virtual Env (ROG)
+        ping: 192.168.199.104
+        widget:
+          type: proxmox
+          node: pve-node-3
+          url: https://192.168.199.104:8006
+          username: api@pam!ro
+          password: 079d7317-1b2c-4b83-8642-5caa886dc48b
 
+    - pve-node-4:
+        icon: proxmox.png
+        href: https://192.168.199.105:8006
+        description: Proxmox Virtual Env (WHITE)
+        ping: 192.168.199.105
+        widget:
+          type: proxmox
+          node: pve-node-4
+          url: https://192.168.199.105:8006
+          username: api@pam!ro
+          password: 079d7317-1b2c-4b83-8642-5caa886dc48b
+
+    - pbs-01:
+        icon: proxmox.png
+        href: https://10.10.10.105:8007
+        description: Proxmox Backup Server 01
+        ping: 10.10.10.105
+        widget:
+          type: proxmoxbackupserver
+          url: https://10.10.10.105:8007
+          username: api@pbs!ro
+          password: f2825bb2-b299-456c-aa8f-eebfb39e2bfb    
+
+- Services:
     - Portainer:
         icon: portainer.png
         href: https://portainer.local.arc4d3.io/
@@ -96,3 +109,4 @@
         icon: gitlab.png
         href: https://gitlab.local.arc4d3.io/
         description: GitLab Community Edition
+

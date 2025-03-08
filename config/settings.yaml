@@ -7,7 +7,7 @@ startUrl: "/"
 
 # Background settings with an image from Unsplash and customized filters
 background:
-  image: https://stsci-opo.org/STScI-01GA6KNV1S3TP2JBPCDT8G826T.png
+  image: https://preview.redd.it/6b8yr7jq6rud1.gif?width=1920&format=mp4&s=a7ccc5b5394b44c74a37633427a73e7a6495ec1b
   blur: sm # Medium blur for a softer look
   saturate: 75 # Slightly vibrant saturation for a lively feel
   brightness: 75 # Bright but not overwhelming
@@ -23,12 +23,12 @@ favicon: https://rockettheme.com/favicon.png
 theme: dark
 
 # Fixed color palette for the site
-color: slate
+color: emerald
 
 quicklaunch:
   searchDescriptions: true
   hideInternetSearch: true
   showSearchSuggestions: true
   hideVisitURL: true
-  provider: google # google, duckduckgo, bing, baidu, brave or custom
+  provider: google
 
