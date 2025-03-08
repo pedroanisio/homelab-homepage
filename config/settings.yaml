@@ -1,34 +1,42 @@
 ---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/settings/
 # Title of the homepage
-title: "PALS - Lab Internal"
+title: "PALS - lab.internal"
 
 # URL where the homepage starts
 startUrl: "/"
 
-# Background settings with an image from Unsplash and customized filters
-background:
-  image: https://preview.redd.it/6b8yr7jq6rud1.gif?width=1920&format=mp4&s=a7ccc5b5394b44c74a37633427a73e7a6495ec1b
-  blur: sm # Medium blur for a softer look
-  saturate: 75 # Slightly vibrant saturation for a lively feel
-  brightness: 75 # Bright but not overwhelming
-  opacity: 85 # Makes the image blend smoothly
-
 # Enable card background blur for aesthetics
 cardBlur: md
+
+theme: dark
+color: slate
+
+# Background image and filters
+background:
+  image: https://cdn.wallpapersafari.com/25/37/aMvXOf.jpg 
+  blur: lg
+  saturate: 90
+  brightness: 60
+  opacity: 80
+
+# Page layout configuration
+layout:
+  Servers:
+    style: column
+    columns: 4
+  Applications:
+    style: row
+    columns: 3
 
 # Custom favicon for your page
 favicon: https://rockettheme.com/favicon.png 
 
-# Use a dark theme for a sleek, modern look
-theme: dark
-
-# Fixed color palette for the site
-color: emerald
-
+# Quick launch settings
 quicklaunch:
   searchDescriptions: true
   hideInternetSearch: true
   showSearchSuggestions: true
   hideVisitURL: true
   provider: google
-
