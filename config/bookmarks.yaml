@@ -1,11 +1,11 @@
 - AI Tools:
     - ChatGPT:
         - abbr: GPT
-          icon: openai
+          icon: openai-light.svg
           href: https://chatgpt.com/
     - OpenAI Playground:
         - abbr: PLAY
-          icon: openai
+          icon: openai-light.svg
           href: https://platform.openai.com/playground/chat
     - Google Gemini:
         - abbr: GEM
@@ -27,7 +27,7 @@
           href: https://reddit.com
     - Medium:
         - abbr: MED
-          icon: medium
+          icon: medium-light.svg
           href: https://medium.com/me/stories/public
     - Twitter:
         - abbr: X
@@ -71,9 +71,6 @@
     - Quivr:
         - abbr: QVR
           href: https://www.quivr.app/
-    - Beam:
-        - abbr: BM
-          href: https://www.beam.app/
     - OpenArt:
         - abbr: OA
           href: https://openart.ai

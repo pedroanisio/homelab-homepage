@@ -29,84 +29,58 @@
         href: https://unifi.ui.com/
         description: (internet) UniFI Admin   
 
-- Proxmox:
-    - pve-node-0:
-        icon: proxmox.png
-        href: https://192.168.199.102:8006
-        description: Proxmox Virtual Env (FILESERVER)
-        ping: 192.168.199.102
-        node: pve-node-0
+- Services:
+    - pve-mngt-1:
+        icon: proxmox-light.svg
+        href: https://192.168.199.2:8006
+        ping: 192.168.199.2
+        description: manegment server.
         widget:
-          type: proxmox
-          url: https://192.168.199.102:8006
-          username: api@pam!ro
-          password: 079d7317-1b2c-4b83-8642-5caa886dc48b 
+            type: proxmox
+            url: https://192.168.199.2:8006
+            username: api@pve!homepage
+            password: 50a1e832-9439-48e5-a858-b740f8892d5c
+            node: pve-mngt-1
 
     - pve-node-1:
-        icon: proxmox.png
-        href: https://192.168.199.103:8006
-        description: Proxmox Virtual Env (NUC-02)
-        ping: 192.168.199.103
-        node: pve-node-1
-        widget:
-          type: proxmox
-          url: https://192.168.199.103:8006
-          username: api@pam!ro
-          password: 079d7317-1b2c-4b83-8642-5caa886dc48b
+        icon: proxmox-light.svg
+        href: https://pve-node-1.tailc357aa.ts.net:8006
+        ping: pve-node-1.tailc357aa.ts.net
+        description: pve-node-1 server.
+        widget:            
+            url: https://pve-node-1.tailc357aa.ts.net:8006
+            type: proxmox
+            username: api@pve!homepage
+            password: 71536307-4d82-422f-8eb2-eb4eb48b36dc
+            node: pve-node-1
 
-    - pve-node-3:
-        icon: proxmox.png
-        href: https://192.168.199.104:8006
-        description: Proxmox Virtual Env (ROG)
-        ping: 192.168.199.104
+    - pve-storage-1:
+        icon: proxmox-light.svg
+        href: https://192.168.199.10:8006
+        ping: 192.168.199.10
+        description: pve-storage-1 server.
         widget:
-          type: proxmox
-          node: pve-node-3
-          url: https://192.168.199.104:8006
-          username: api@pam!ro
-          password: 079d7317-1b2c-4b83-8642-5caa886dc48b
+            url: https://192.168.199.10:8006
+            type: proxmox
+            username: api@pve!homepage
+            password: 91119d5f-9085-4443-bb93-a30242deafa4
+            node: pve-storage-1
 
-    - pve-node-4:
-        icon: proxmox.png
-        href: https://192.168.199.105:8006
-        description: Proxmox Virtual Env (WHITE)
-        ping: 192.168.199.105
-        widget:
-          type: proxmox
-          node: pve-node-4
-          url: https://192.168.199.105:8006
-          username: api@pam!ro
-          password: 079d7317-1b2c-4b83-8642-5caa886dc48b
-
-    - pbs-01:
-        icon: proxmox.png
-        href: https://10.10.10.105:8007
-        description: Proxmox Backup Server 01
-        ping: 10.10.10.105
-        widget:
-          type: proxmoxbackupserver
-          url: https://10.10.10.105:8007
-          username: api@pbs!ro
-          password: f2825bb2-b299-456c-aa8f-eebfb39e2bfb    
-
-- Services:
     - Portainer:
         icon: portainer.png
         href: https://portainer.local.arc4d3.io/
+        ping: 10.10.10.5
         description: Portainer Container Management
-
-    - OPNsense:
-        icon: opnsense.png
-        href: https://10.10.10.1/
-        description: OPNsense Firewall
 
     - Jupyter:
         icon: jupyter.png
         href: https://jupyter.local.arc4d3.io/
+        ping: 10.10.10.10
         description: Jupyter Notebook
 
     - GitLab:
         icon: gitlab.png
         href: https://gitlab.local.arc4d3.io/
+        ping: 10.10.10.10
         description: GitLab Community Edition
 
